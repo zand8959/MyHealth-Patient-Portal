@@ -1,83 +1,152 @@
-table, tr, th, td
-{
-    border: 1px solid black;
+body {
+    font-family: "Segoe UI";
+    background: rgb(82, 84, 190);
+    background: linear-gradient(
+        0deg,
+        rgba(82, 84, 190, 1) 0%,
+        rgba(164, 227, 245, 1) 100%
+    );
 }
 
-h1, h2 {
-  text-align: center;
-  color: black;
-  font-weight: 200;
-  margin-top: 0;
+h3 {
+    margin-top: 0px;
+    color: #0c1059;
 }
 
-h2 {
-  margin-bottom: 1em;
+legend {
+    font-weight: bold;
 }
 
-section {
-  display: block;
-  background: white;
-  margin: 0 auto 1em;
-  height: relative;
-  max-width: 700px;
-  border-radius: .5em;
-  color: white;
-  img, p {
-    padding: 1em;
-  }
+form {
+    background-color: white;
+    border: 2px solid #0c1059;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 15px;
 }
 
-.hide {
-  display: none;
+.login {
+	width: 400px;
 }
 
-.none {
-  display:none;
+.register {
+	width: 400px;
 }
 
-.block-of-text  {
-  position: relative;
-  top: 50%;
-  color: black;
+.patient {
+	width: 720px;
 }
 
-.side  {
-  float: left;
+.oldPatient {
+	width: 885px;
 }
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.doctor {
+	width: 620px;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+.formHeader {
+	
 }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+.formFields {
+	
 }
 
-.collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: white;
-  float: right;
-  margin-left: 5px;
+.formElement {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+.formButtons {
+	
+}
+
+.infoBox {
+	background-color: white;
+    border: 2px solid #0c1059;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.infoHeader {
+	
+}
+
+.infoFields {
+	
+}
+
+.infoElements {
+	
+}
+
+.infoButtons {
+	
+}
+
+.pageHeader {
+	
+}
+
+.pageHeaderBar {
+	margin-bottom: 30px;
+}
+
+.pageHeaderLink {
+	display: inline;
+    background: linear-gradient(
+        0deg,
+        rgba(16, 19, 153, 1) 0%,
+        rgba(48, 45, 199, 1) 67%,
+        rgba(61, 122, 250, 1) 100%
+    );
+    padding: 15px;
+    transition: background 250ms linear;
+    border-left: solid 1px #3d7afa;
+}
+
+.pageHeaderLink a {
+	color: white;
+    text-decoration-line: none;
+}
+
+.pageHeaderLink:hover {
+	background: linear-gradient(
+        180deg,
+        rgba(16, 19, 153, 1) 0%,
+        rgba(48, 45, 199, 1) 67%,
+        rgba(61, 122, 250, 1) 100%
+    );
+}
+
+.button {
+    font-family: "Segoe UI";
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.green {
+    background-color: #4fdd6e;
+}
+
+.blue {
+    background-color: #4260e5;
+}
+
+.red {
+    background-color: #d62a36;
+}
+
+.errorMessage {
+	font-style: italic;
+	color: red;
 }
